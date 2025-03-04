@@ -22,8 +22,8 @@ warn_unused_ignores = true
 warn_redundant_casts = true
 warn_unused_configs = true
 plugins = [
-    "mypy_django_plugin.main",
-    "mypy_drf_plugin.main",
+  "mypy_django_plugin.main",
+  "mypy_drf_plugin.main",
 ]
 
 [[tool.mypy.overrides]]
@@ -57,8 +57,8 @@ indent_size = 2
 target-version = "py312"
 # Exclude a variety of commonly ignored directories.
 extend-exclude = [
-    "*/migrations/*.py",
-    "staticfiles/*",
+  "*/migrations/*.py",
+  "staticfiles/*",
 ]
 
 [tool.ruff.lint]
@@ -130,7 +130,7 @@ ignore = [
 # The fixes in extend-unsafe-fixes will require
 # provide the `--unsafe-fixes` flag when fixing.
 extend-unsafe-fixes = [
-    "UP038",
+  "UP038",
 ]
 
 [tool.ruff.lint.isort]
