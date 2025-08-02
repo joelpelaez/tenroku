@@ -1,6 +1,6 @@
 # Translations for the Tenroku project
-# Copyright (C) 2024 Joel Pelaez Jorge
-# Joel Pelaez Jorge <joel.pelaez.jorge@gmail.com>, 2024.
+# Copyright (C) 2025 Joel Pelaez Jorge
+# Joel Pelaez Jorge <joel.pelaez.jorge@gmail.com>, 2025.
 #
 #, fuzzy
 msgid ""

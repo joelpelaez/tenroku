@@ -10,4 +10,4 @@ class UsersConfig(AppConfig):
 
     def ready(self):
         with contextlib.suppress(ImportError):
-            import tenroku.users.signals  # noqa: F401
+            import tenroku.users.signals  # noqa: F401, PLC0415

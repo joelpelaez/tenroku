@@ -1,4 +1,3 @@
-# ruff: noqa: E501
 from .base import *  # noqa: F403
 from .base import INSTALLED_APPS
 from .base import MIDDLEWARE
@@ -61,10 +60,10 @@ if env("USE_DOCKER") == "yes":
     import socket
 
     hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
-    INTERNAL_IPS += [".".join(ip.split(".")[:-1] + ["1"]) for ip in ips]
+    INTERNAL_IPS += [".".join([*ip.split(".")[:-1], "1"]) for ip in ips]
     # RunServerPlus
     # ------------------------------------------------------------------------------
-    # This is a custom setting for RunServerPlus to fix reloader issue in Windows docker environment
+    # This is a custom setting for RunServerPlus to fix reloader issue in Windows docker environment  # noqa: E501
     # Werkzeug reloader type [auto, watchdog, or stat]
     RUNSERVERPLUS_POLLER_RELOADER_TYPE = "stat"
     # If you have CPU and IO load issues, you can increase this poller interval e.g) 5

@@ -44,10 +44,8 @@ services:
   redis:
     image: docker.io/redis:6
     container_name: tenroku_local_redis
-
     volumes:
       - tenroku_local_redis_data:/data
-
 
   celeryworker:
     <<: *django
